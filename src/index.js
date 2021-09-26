@@ -6,15 +6,13 @@ import {Provider} from "react-redux";
 import store from './Store/store'
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
-
 ReactDOM.render(
     <React.StrictMode>
         <Provider store={store}>
             <Router>
                 <Switch>
-                    <Route exact path="/" component={App}></Route>
+                    <Route exact path="/" component={App}/>
                 </Switch>
-
             </Router>
         </Provider>
     </React.StrictMode>,
